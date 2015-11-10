@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{384A7ACC-09F6-4205-A060-136A81DBF60F}</ProjectGuid>
+    <ProjectGuid>{386D836E-2BA2-4582-8914-523A8771DF86}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ContinuousDelivery.Tests</RootNamespace>
@@ -34,9 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <Private>False</Private>
-    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -86,7 +84,6 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
-    <Compile Include="Controllers\IntegrationControllerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
@@ -96,7 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ContinuousDelivery\ContinuousDelivery.csproj">
-      <Project>{1E05D6B7-F5AF-421C-9E9A-0CE0FBB34A25}</Project>
+      <Project>{5EB96A11-9CFD-47B1-9F6F-EABD23D758E8}</Project>
       <Name>ContinuousDelivery</Name>
     </ProjectReference>
   </ItemGroup>
