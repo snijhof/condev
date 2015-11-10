@@ -13,47 +13,42 @@ namespace ContinuousDelivery.Tests.Controllers
     public class HomeControllerTest
     {
         [TestMethod]
-        public void Test1()
+        public void Index()
         {
-            Assert.AreEqual(true, true);
+            // Arrange
+            HomeController controller = new HomeController();
+
+            // Act
+            ViewResult result = controller.Index() as ViewResult;
+
+            // Assert
+            Assert.IsNotNull(result);
         }
-        //[TestMethod]
-        //public void Index()
-        //{
-        //    // Arrange
-        //    HomeController controller = new HomeController();
 
-        //    // Act
-        //    ViewResult result = controller.Index() as ViewResult;
+        [TestMethod]
+        public void About()
+        {
+            // Arrange
+            HomeController controller = new HomeController();
 
-        //    // Assert
-        //    Assert.IsNotNull(result);
-        //}
+            // Act
+            ViewResult result = controller.About() as ViewResult;
 
-        //[TestMethod]
-        //public void About()
-        //{
-        //    // Arrange
-        //    HomeController controller = new HomeController();
+            // Assert
+            Assert.AreEqual("Your application description page.", result.ViewBag.Message);
+        }
 
-        //    // Act
-        //    ViewResult result = controller.About() as ViewResult;
+        [TestMethod]
+        public void Contact()
+        {
+            // Arrange
+            HomeController controller = new HomeController();
 
-        //    // Assert
-        //    Assert.AreEqual("Your application description page.", result.ViewBag.Message);
-        //}
+            // Act
+            ViewResult result = controller.Contact() as ViewResult;
 
-        //[TestMethod]
-        //public void Contact()
-        //{
-        //    // Arrange
-        //    HomeController controller = new HomeController();
-
-        //    // Act
-        //    ViewResult result = controller.Contact() as ViewResult;
-
-        //    // Assert
-        //    Assert.IsNotNull(result);
-        //}
+            // Assert
+            Assert.IsNotNull(result);
+        }
     }
 }
